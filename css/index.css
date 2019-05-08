@@ -1,0 +1,612 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-family: 'Exo 2', sans-serif;
+}
+
+/* лого, мени навигација START  */
+
+.nav-bar {
+    width: 100%;
+    height: 110px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .04);  
+}
+.nav-bar .nav-bar-elements {
+    width: calc(100% - 300px);
+    height: 110px;
+    margin: 0 auto;
+}
+
+.nav-bar .nav-bar-elements {
+    display: flex;
+    flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: stretch;
+}
+
+.nav-bar .nav-bar-elements .circle-logo {
+    width: 197px;
+    height: 46px;
+    background-image: url(../picture/CIRCLE\ LOGO\ BLACK-01-01.png);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: cover;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+}
+
+.nav-bar-elements .gender-nav li {
+    display: inline;
+}
+.nav-bar-elements .gender-nav li:first-child{
+    margin-right: 50px;
+}
+
+/* **************************** GENDER NAV HOVER EFFECT **************************** */
+
+.effect5{
+	position: relative;
+	transition:600ms;
+}
+.effect5:after{
+	content: attr(data-hover);
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0;
+	transition:300ms;
+	color: #F29F05;
+	letter-spacing: -25px;
+	width: 100%;
+	text-align: center;
+}
+.effect5:hover:after{
+	letter-spacing: 0px;
+	opacity: 1;
+}
+.effect5:hover{
+	color: transparent !important;
+}
+/* #Effect5 */
+/* front */
+.text-hover{
+	width: 100%;
+	height: 100%;
+	cursor: default;
+	position: relative;
+	overflow: hidden;
+	perspective:1000px;
+	-webkit-perspective:1000px;
+	-moz-perspective:1000px;
+	display: -webkit-box;
+	display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    -moz-flex-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    -moz-flex-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    align-items: center;
+    text-align: center;
+}
+
+.demo5{
+	text-shadow:0px 0px 0px rgb(255, 217, 0, 0.5);
+}
+
+/* **************************** GENDER NAV HOVER EFFECT **************************** */
+
+/* HOVER EFFECT  2 ***************************************** */
+
+  /* :root {
+    --mainColor: #F29F05;
+  }
+
+  .nav-bar-elements .gender-nav a {
+    background:
+       linear-gradient(
+         to bottom, var(--mainColor) 0%,
+         var(--mainColor) 100%
+       );
+      background-position: 0 100%;
+      background-repeat: repeat-x;
+      background-size: 4px 4px;
+    color: #000;
+    text-decoration: none;
+    transition: background-size .2s;
+  }
+  
+  .nav-bar-elements .gender-nav a:hover {
+    background-size: 4px 50px;
+  } */
+
+/* HOVER EFFECT  2 ***************************************** */
+
+  
+.nav-bar-elements .gender-nav a {
+    font-size: 55px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #222222;
+    text-transform: uppercase;
+}
+
+.user-nav li {
+    float: left;
+    display: flex;
+    margin: 0 40px 0 0;
+}
+
+.user-nav li:last-child {
+margin: 0;
+}
+
+.user-nav li span {
+    margin-left: 10px;
+    color: #A7A7A7;
+}
+
+.user-nav ul li a {
+    width: 22px;
+    height: 22px;
+    display: flex;
+}
+
+.user-nav .user-search-icon  {
+    background-image: url(../picture/nav-icons/search\ icon.svg);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: cover;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.user-nav .user-love-icon  {
+    background-image: url(../picture/nav-icons/srce\ icon.svg);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: cover;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.user-nav .user-profile-icon {
+    background-image: url(../picture/nav-icons/profile\ icon.svg);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: cover;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.user-nav .user-shop-icon  {
+    background-image: url(../picture/nav-icons/kosnica\ icon.svg);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: cover;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.user-nav li:nth-child(3) {
+    border-right: 1px solid #A7A7A7;
+    padding-right: 40px;
+}
+
+/* лого, мени навигација END  */
+
+/* ПОДмени START */
+
+.podnav-bar {
+    width: 100%;
+    height: 80px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .04);
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+}
+
+.second-nav ul li {
+    display: inline;
+}
+
+.second-nav a {
+    font-size: 25px;
+    font-weight: 500;
+    color: #222222;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 0 20px;
+    position: relative;
+} 
+
+.second-nav a:before,
+.second-nav a:after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #F29F05;
+}
+
+.second-nav a:before {
+  opacity: 0;
+  -webkit-transform: translateY(-8px);
+  -ms-transform: translateY(-8px);
+  transform: translateY(-8px);
+  -webkit-transition: -webkit-transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s;
+  transition: transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s;
+}
+
+.second-nav a:after {
+  opacity: 0;
+  -webkit-transform: translateY(4px);
+  -ms-transform: translateY(4px);
+  transform: translateY(4px);
+  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s;
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s;
+}
+
+.second-nav a:hover:before,
+.second-nav a:hover:after,
+.second-nav a:focus:before,
+.second-nav a:focus:after {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.second-nav a:hover:before,
+.second-nav a:focus:before {
+  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s;
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s;
+}
+
+.second-nav a:hover:after,
+.second-nav a:focus:after {
+  -webkit-transition: -webkit-transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s 0.2s;
+  transition: transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s 0.2s;
+}
+
+/* ПОДмени END */
+
+/* Info section bar START */
+
+.free-delivery-info h1 {
+    font-size: 35px;
+    color: #222222;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 50px 834px;
+    font-weight: 700;
+}
+
+.free-delivery-info .info-section {
+    width: auto;
+    height: 200px;
+    background-color: #222222;
+    margin: 50px 0 0 0;
+}
+.img-info {
+    height: 200px;
+    background: url('../picture/bc-slika.png');
+}
+
+.img-info h2 {
+    color: #ffffff;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 0 0 0;
+    line-height: 48px;
+}
+
+.glitch {
+    color: black;
+    font-size: 100px;
+    position: relative;
+    width: 252px;
+    margin: 0 auto;
+  }
+  
+  @keyframes noise-anim {
+    0% {
+      clip: rect(21px, 9999px, 23px, 0);
+    }
+    5% {
+      clip: rect(45px, 9999px, 71px, 0);
+    }
+    10% {
+      clip: rect(25px, 9999px, 47px, 0);
+    }
+    15% {
+      clip: rect(39px, 9999px, 67px, 0);
+    }
+    20% {
+      clip: rect(23px, 9999px, 90px, 0);
+    }
+    25% {
+      clip: rect(58px, 9999px, 91px, 0);
+    }
+    30% {
+      clip: rect(100px, 9999px, 39px, 0);
+    }
+    35% {
+      clip: rect(88px, 9999px, 58px, 0);
+    }
+    40% {
+      clip: rect(6px, 9999px, 22px, 0);
+    }
+    45% {
+      clip: rect(54px, 9999px, 45px, 0);
+    }
+    50% {
+      clip: rect(57px, 9999px, 88px, 0);
+    }
+    55% {
+      clip: rect(81px, 9999px, 3px, 0);
+    }
+    60% {
+      clip: rect(97px, 9999px, 27px, 0);
+    }
+    65% {
+      clip: rect(92px, 9999px, 61px, 0);
+    }
+    70% {
+      clip: rect(9px, 9999px, 38px, 0);
+    }
+    75% {
+      clip: rect(75px, 9999px, 49px, 0);
+    }
+    80% {
+      clip: rect(6px, 9999px, 35px, 0);
+    }
+    85% {
+      clip: rect(17px, 9999px, 82px, 0);
+    }
+    90% {
+      clip: rect(18px, 9999px, 89px, 0);
+    }
+    95% {
+      clip: rect(72px, 9999px, 43px, 0);
+    }
+    100% {
+      clip: rect(78px, 9999px, 66px, 0);
+    }
+  }
+  .glitch:after {
+    content: attr(data-text);
+    position: absolute;
+    left: 2px;
+    text-shadow: -1px 0 rgb(255, 238, 0);
+    top: 0;
+    color: white;
+    background: black;
+    overflow: hidden;
+    clip: rect(0, 900px, 0, 0);
+    animation: noise-anim 2s infinite linear alternate-reverse;
+
+  }
+  
+  @keyframes noise-anim-2 {
+    0% {
+      clip: rect(99px, 9999px, 58px, 0);
+    }
+    5% {
+      clip: rect(38px, 9999px, 21px, 0);
+    }
+    10% {
+      clip: rect(7px, 9999px, 75px, 0);
+    }
+    15% {
+      clip: rect(94px, 9999px, 28px, 0);
+    }
+    20% {
+      clip: rect(20px, 9999px, 91px, 0);
+    }
+    25% {
+      clip: rect(12px, 9999px, 4px, 0);
+    }
+    30% {
+      clip: rect(74px, 9999px, 44px, 0);
+    }
+    35% {
+      clip: rect(17px, 9999px, 51px, 0);
+    }
+    40% {
+      clip: rect(75px, 9999px, 63px, 0);
+    }
+    45% {
+      clip: rect(23px, 9999px, 67px, 0);
+    }
+    50% {
+      clip: rect(73px, 9999px, 36px, 0);
+    }
+    55% {
+      clip: rect(93px, 9999px, 40px, 0);
+    }
+    60% {
+      clip: rect(76px, 9999px, 53px, 0);
+    }
+    65% {
+      clip: rect(99px, 9999px, 44px, 0);
+    }
+    70% {
+      clip: rect(26px, 9999px, 97px, 0);
+    }
+    75% {
+      clip: rect(76px, 9999px, 34px, 0);
+    }
+    80% {
+      clip: rect(94px, 9999px, 65px, 0);
+    }
+    85% {
+      clip: rect(86px, 9999px, 18px, 0);
+    }
+    90% {
+      clip: rect(80px, 9999px, 42px, 0);
+    }
+    95% {
+      clip: rect(40px, 9999px, 91px, 0);
+    }
+    100% {
+      clip: rect(75px, 9999px, 86px, 0);
+    }
+  }
+  .glitch:before {
+    content: attr(data-text);
+    position: absolute;
+    left: -2px;
+    text-shadow: 1px 0 blue;
+    top: 0;
+    color: white;
+    background: black;
+    overflow: hidden;
+    clip: rect(0, 900px, 0, 0);
+    animation: noise-anim-2 3s infinite linear alternate-reverse;
+    
+  }
+
+/* Info section bar END */
+
+
+
+
+
+/* *********************************************** */
+
+/* .product-box {
+    width: 713px;
+    height: 938px;
+    background-color: aquamarine;
+    box-shadow: 50px 50px 0 rgba(0, 0, 0, .1);
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.product-box.product1 {
+    background-image: url(../picture/mainproduct1.jpg);
+}
+
+.product-box .product-top {
+    width: 100%;
+    padding: 40px;
+}
+
+.product-box .like-btn {
+    width: 40px;
+    height: 40px;
+    background-image: url(../picture/nav-icons/srce\ icon.svg);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: cover;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.product-box .product-bottom {
+    flex-grow: 1;
+    display: flex;
+    background: -moz-linear-gradient(top, rgba(255,255,255,0) 51%, rgba(255,255,255,0.5) 100%);
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0) 51%,rgba(255,255,255,0.5) 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 51%,rgba(255,255,255,0.5) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#80ffffff',GradientType=0 );
+    align-items: flex-end;
+    padding: 40px;
+}
+
+.product-bottom .product-description {
+    width: 100%;
+}
+
+.product-box .product-bottom .product-tittle h3 {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.product-box .product-bottom .product-tittle span {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.product-box .product-footer {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.product-box .product-footer .card-btn {
+    width: 40px;
+    height: 40px;
+    background-image: url(../picture/nav-icons/kosnica\ icon.svg);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: cover;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.product-box .product-footer a.product-detal-btn {
+    display: inline-block;
+    height: 44px;
+    border-radius: 25px;
+    border: 2px solid #222222;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 7px 33px;
+    color: #222222;
+
+}
+.product-box .product-footer .details-box {
+    width: calc(100% - 80px);
+    text-align: center;
+    
+}
+
+.product-box .product-footer a.product-detal-btn:hover {
+    display: inline-block;
+    height: 44px;
+    border-radius: 25px;
+    background-color: #F29F05;
+} */
+
+
+
