@@ -760,19 +760,6 @@ margin: 0;
 }
 
 /* ******************************** */
-
-.product-box1,.product-box2,.product-box3{
-  width: 425px;
-  height: 600px;
-  background-color: #A1ACB2;
-  margin-right: 10px;
-}
-
-.product-box3 {
-  margin: 0;
-  width: 347px;
-}
-
 .product-box2 .product-box-part1 {
   padding: 30px 0 0 30px;
 }
@@ -836,6 +823,165 @@ margin: 0;
   margin-top: 70px;
 }
 
+/* ************************************************* */
+
+
+.product-box3 .product-box-part1 {
+  padding: 30px 0 0 30px;
+}
+
+.product-box3 .product-box-part1 h3 {
+  font-size: 35px;
+  font-weight: 700;
+  color: #222222;
+}
+
+.product-box3 .product-box-part1 span {
+  font-size: 25px;
+  font-weight: 500;
+  color: #222222;
+}
+
+.product-box3 .product-box-part3 button {
+  width: 40px;
+  height: 40px;
+  background-image: url(../picture/nav-icons/kosnica\ icon.svg);
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-size: cover;
+  border: none;
+  outline: none;
+  cursor: pointer; 
+  margin-left: 30px;
+}
+
+.product-box3 .product-box-part1 .new-product {
+  float: right;
+  margin: -20px 30px 0 0;
+  width: 66px;
+  height: 24px;
+  background-color: #f5f5f5;
+  text-align: center;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.product-box3 .product-box-part2 {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+  align-content: stretch;
+  margin-top: 60px;
+}
+
+.product-box3 .product-box-part2 .imgproduct{
+  width: 276px;
+  height: 276px;
+}
+
+.product-box3 .product-box-part2 span {
+  font-size: 25px;
+  font-weight: 500;
+  color: #222222;
+  margin-top: 70px;
+}
+
+.slider-products-box .switch-buttons {
+  width: 706px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: flex-end;
+	align-content: stretch;
+}
+
+.slider-products-box .switch-buttons button {
+  width: 79px;
+  height: 47px;
+  background-color: #F5F5F5;
+  border-radius: 25px 0 0 25px;
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+  border: 0px;
+  margin-top: 50px;
+}
+
+.slider-products-box .switch-buttons .swibtn1{
+
+}
+
+.slider-products-box .switch-buttons .swibtn1 img {
+  width: 25px;
+  height: 30px;
+}
+
+.slider-products-box .switch-buttons .swibtn2 img {
+  width: 25px;
+  height: 30px;
+}
+
+.slider-products-box .switch-buttons .swibtn2 {
+  border-radius: 0 25px 25px 0;
+  margin-left: 5px;
+}
+
+.slider-products-box .switch-buttons .swibtn1:hover {
+  background-color: #F29F05;
+}
+
 
 
 /* Slider Products END */
+
+/* Privileges section START */
+
+.privileges-section {
+    width: auto;
+    height: 250px;
+    background-color: #EBEBEB;
+    margin-top: 50px;
+}
+
+.privileges-section-box {
+  width: 1720px;
+  height: 250px;
+  /* margin: 0 auto; */
+  padding-right: 80px;
+  padding-left: 80px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: stretch;
+  /* padding: 0 115px; */
+}
+
+.privileges-header {
+  font-size: 35px;
+  font-weight: 700;
+  color: #222222;
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+.privileges-description {
+  font-size: 18px;
+  font-weight: 300;
+  color: #222222;
+  text-align: center;
+}
+
+.vertical-border-line {
+  width: 2px;
+  height: 126px;
+  background-color: #D5D5D5;
+  
+}
+
+/* Privileges section END  */
