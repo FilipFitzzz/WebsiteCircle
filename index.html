@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Circle.mk</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/index.css">
     <link href="https://fonts.googleapis.com/css?family=Exo+2:300,400,700" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 <body>
 <!-- лого, мени навигација START -->
@@ -206,7 +208,7 @@
                                 <p class="new-product">NEW</p>
                             </div>
                             <div class="product-box-part2">
-                                <img class="imgproduct" src="./picture/product-tshirt.png" alt="">
+                                <img class="imgproduct" src="./picture/produck-bluza.png" alt="">
                                 <span>35.00 $</span>
                             </div>
                             <div class="product-box-part3">
@@ -257,10 +259,80 @@
 
 <!-- Privileges section END -->
 
+<!-- Video Section Start  -->
+<div class="video-bc">
+    <div id=videoBox>
+        <video id=customVideo>
+        <source src="./circlevideo.mp4" 
+                type='video/webm;codecs="vp8, vorbis"' />
+        <source src="./circlevideo.mp4" 
+                type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"' />
+      </video>
+        <div class="control-bar">
+          <button id=playPauseBtn></button>
+          <!-- Play & Pause Button -->
+          <label id="currentTime"></label>
+          <!-- Current Time -->
+          <div class="video-seekbar">
+            <input type="range" id=seekBar value="0" min="0" max="100" step="0.1">
+            <progress value="0" max="100" step="1" id=progressBar class="progressBar"></progress>
+            <progress value="0" max="100" step="1" id=bufferBar class="bufferBar"></progress>
+          </div>
+          <label id=videoTime>00:00</label>
+          <button id=volumeBtn></button>
+          <input type="range" id=seekVol min="0" max="100" step="1" class="volumeSeekBar">
+          <button id=fsBtn class="fa fa-expand fa-lg"></button>
+        </div>
+      </div>
+</div>
+<!-- Video Section End  -->
 
-        
+<!-- THE STORYBOARD START -->
 
+<div class="story-container">
+    <h1>THE STORYBOARD</h1>
+    <div class="story-border"></div>
+    <h6>Find our diverse and varied stories</h6>
+    <div class="real-story-sontainer">
+        <div class="story-one">
+            <div class="pic-section"></div>
+            <div class="text-section">
+                <span class="category-text">Music</span>
+                <span class="date-text">February 8, 2019</span>
+                <h3 class="header-text">Slatkaristika: How to look <br> urban in a criminal style</h3>
+            </div>
+        </div>
+        <div class="story-two">
+            <div class="pic-section"></div>
+            <div class="text-section">
+                <span class="category-text">Music</span>
+                <span class="date-text">October 12, 2018</span>
+                <h3 class="header-text">2Bona: Keep the style <br> on every path</h3>
+            </div>
+        </div>
+        <div class="story-three">
+            <div class="pic-section"></div>
+            <div class="text-section">
+                <span class="category-text">FASHION</span>
+                <span class="date-text">September 4, 2019</span>
+                <h3 class="header-text">Borkica Janeva: Circle is is <br> every day a part of my life</h3>
+            </div>
+        </div>
+    </div>
+</div>
 
+<!-- THE STORYBOARD END -->
+
+<!-- STAY SOCIAL SECTION START -->
+
+<div class="staysocial-section">
+    <h1>Stay Social</h1>
+    <span>@circle</span>
+</div>
+
+<!-- STAY SOCIAL SECTION END -->
+
+<script src="./JavaScript/index.js"></script>
 </body>
 
 </html>
