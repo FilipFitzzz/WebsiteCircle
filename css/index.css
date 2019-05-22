@@ -1171,7 +1171,7 @@ input.volumeSeekBar {
 
 .story-container {
   width: auto;
-  height: 180px;
+  height: auto;
   margin-top: 50px;
 }
 
@@ -1249,7 +1249,52 @@ input.volumeSeekBar {
   cursor: pointer;
 }
 
+.story-container .story-one .pic-section {
+  max-width: 100%;
+  
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.story-container .story-one .pic-section:hover {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.story-container .story-two .pic-section {
+  max-width: 100%;
+  
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.story-container .story-two .pic-section:hover {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.story-container .story-three .pic-section {
+  max-width: 100%;
+  
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.story-container .story-three .pic-section:hover {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+
 .story-container .text-section {
+  width: auto;
+  height: auto;
   display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
@@ -1287,6 +1332,140 @@ input.volumeSeekBar {
 
 /* STAY SOCIAL SECTION START */
 
-  
+.staysocial-txt-section {
+  display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: stretch;
+  align-content: stretch;
+  margin-top: 80px;
+}
+
+.staysocial-txt-section h1 {
+  font-size: 55px;
+  font-weight: 500;
+  text-align: center;
+  color: #222222;
+}
+
+.staysocial-txt-section span {
+  font-size: 35px;
+  font-weight: 300;
+  color: #222222;
+  text-align: center;
+}
+
+.social-pic-container {
+  width: auto;
+  height: 430px;
+  margin-top: 50px;
+}
+
+.social-pic-container .pic-sm-1 {
+  display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: baseline;
+  align-content: stretch;
+}
+
+.img-zoom {
+  overflow: hidden;
+  position: relative;
+}
+.img-zoom .img-responsive {
+  -moz-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
+  -moz-transition: all 600ms ease-in-out;
+  -o-transition: all 600ms ease-in-out;
+  -webkit-transition: all 600ms ease-in-out;
+  transition: all 600ms ease-in-out;
+}
+.img-zoom:hover .img-responsive {
+  -moz-transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
+  -webkit-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+  -moz-transition: all 600ms ease-in-out;
+  -o-transition: all 600ms ease-in-out;
+  -webkit-transition: all 600ms ease-in-out;
+  transition: all 600ms ease-in-out;
+}
+
+.img-zoom span {
+  position: absolute;
+  top: -110px;
+  width: 100%;
+  text-align: center;
+  -moz-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+.img-zoom:hover span {
+  text-decoration: none;
+  top: 150px;
+  -moz-transition: all 400ms ease-in-out;
+  -o-transition: all 400ms ease-in-out;
+  -webkit-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+}
 
 /* STAY SOCIAL SECTION END */
+
+/* FOOTER START */
+
+.futter-container {
+  width: 100%;
+  height: 350px;
+  background-color: #222222;
+  margin-top: 50px;
+  padding: 50px 150px;
+  display: flex;
+}
+
+.footer-txt-elements {
+  width: 1148px;
+  height: auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-content: stretch;
+  padding-left: 80px;
+}
+
+.futter-container .about-text {
+  width: 390px;
+  height: 142px;
+  box-sizing: border-box;
+}
+
+.futter-container h1 {
+  font-size: 35px;
+  font-weight: 700;
+  color: #F29F05;
+}
+
+.futter-container .about-text p {
+  font-size: 18px;
+  font-weight: 300;
+  color: #F5F5F5;
+  margin-top: 10px;
+}
+
+.footer-site p {
+  font-size: 18px;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding-top: 15px;
+  color: #F5F5F5;
+  cursor: pointer;
+}
+
+
+/* FOOTER END */
