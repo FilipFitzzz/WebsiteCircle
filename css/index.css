@@ -6,7 +6,9 @@
 }
 
 /* лого, мени навигација START  */
-
+body, html {
+  width: 100%;
+}
 .nav-bar {
     width: 100%;
     height: 110px;
@@ -1357,9 +1359,12 @@ input.volumeSeekBar {
 }
 
 .social-pic-container {
-  width: auto;
-  height: 430px;
+  width: 100%;
+  /* height: 430px; */
   margin-top: 50px;
+  background: #222222;
+  /* border-top: 3px solid #222222; */
+  padding-top: 3px;
 }
 
 .social-pic-container .pic-sm-1 {
@@ -1376,6 +1381,9 @@ input.volumeSeekBar {
   position: relative;
 }
 .img-zoom .img-responsive {
+  width: 100%;
+}
+.img-zoom .img-responsive {
   -moz-transform: scale(1, 1);
   -ms-transform: scale(1, 1);
   -webkit-transform: scale(1, 1);
@@ -1386,14 +1394,15 @@ input.volumeSeekBar {
   transition: all 600ms ease-in-out;
 }
 .img-zoom:hover .img-responsive {
-  -moz-transform: scale(1.1, 1.1);
-  -ms-transform: scale(1.1, 1.1);
-  -webkit-transform: scale(1.1, 1.1);
-  transform: scale(1.1, 1.1);
+  -moz-transform: scale(1.11, 1.1);
+  -ms-transform: scale(1.11, 1.1);
+  -webkit-transform: scale(1.11, 1.1);
+  transform: scale(1.11, 1.1);
   -moz-transition: all 600ms ease-in-out;
   -o-transition: all 600ms ease-in-out;
   -webkit-transition: all 600ms ease-in-out;
   transition: all 600ms ease-in-out;
+  opacity: .3;
 }
 
 .img-zoom span {
@@ -1425,6 +1434,7 @@ input.volumeSeekBar {
   background-color: #222222;
   margin-top: 50px;
   padding: 50px 150px;
+  box-sizing: border-box;
   display: flex;
 }
 
