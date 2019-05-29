@@ -1,0 +1,471 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-family: 'Exo 2', sans-serif;
+}
+
+/* лого, мени навигација START  */
+body, html {
+  width: 100%;
+}
+.nav-bar {
+    width: 100%;
+    height: 110px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .04);  
+}
+.nav-bar .nav-bar-elements {
+    width: calc(100% - 300px);
+    height: 110px;
+    margin: 0 auto;
+}
+
+.nav-bar .nav-bar-elements {
+    display: flex;
+    flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: stretch;
+}
+
+.nav-bar .nav-bar-elements .circle-logo {
+    width: 197px;
+    height: 46px;
+    background-image: url(../picture/CIRCLE\ LOGO\ BLACK-01-01.png);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: cover;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+}
+
+.nav-bar-elements .gender-nav li {
+    display: inline;
+}
+.nav-bar-elements .gender-nav li:first-child{
+    margin-right: 50px;
+}
+
+/* **************************** GENDER NAV HOVER EFFECT **************************** */
+
+.effect5{
+	position: relative;
+	transition:600ms;
+}
+.effect5:after{
+	content: attr(data-hover);
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0;
+	transition:300ms;
+	color: #F29F05;
+	letter-spacing: -25px;
+	width: 100%;
+	text-align: center;
+}
+.effect5:hover:after{
+	letter-spacing: 0px;
+	opacity: 1;
+}
+.effect5:hover{
+	color: transparent !important;
+}
+/* #Effect5 */
+/* front */
+.text-hover{
+	width: 100%;
+	height: 100%;
+	cursor: default;
+	position: relative;
+	overflow: hidden;
+	perspective:1000px;
+	-webkit-perspective:1000px;
+	-moz-perspective:1000px;
+	display: -webkit-box;
+	display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    -moz-flex-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    -moz-flex-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    align-items: center;
+    text-align: center;
+}
+
+.demo5{
+	text-shadow:0px 0px 0px rgb(255, 217, 0, 0.5);
+}
+ 
+.nav-bar-elements .gender-nav a {
+    font-size: 55px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #222222;
+    text-transform: uppercase;
+}
+
+.user-nav li {
+    float: left;
+    display: flex;
+    margin: 0 40px 0 0;
+}
+
+.user-nav li:last-child {
+margin: 0;
+}
+
+.user-nav li span {
+    margin-left: 10px;
+    color: #A7A7A7;
+}
+
+.user-nav ul li a {
+    width: 22px;
+    height: 22px;
+    display: flex;
+}
+
+.user-nav .user-search-icon  {
+    background-image: url(../picture/nav-icons/search\ icon.svg);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: cover;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.user-nav .user-love-icon  {
+    background-image: url(../picture/nav-icons/srce\ icon.svg);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: cover;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.user-nav .user-profile-icon {
+    background-image: url(../picture/nav-icons/profile\ icon.svg);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: cover;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.user-nav .user-shop-icon  {
+    background-image: url(../picture/nav-icons/kosnica\ icon.svg);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: cover;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.user-nav li:nth-child(3) {
+    border-right: 1px solid #A7A7A7;
+    padding-right: 40px;
+}
+
+/* лого, мени навигација END  */
+
+/* ПОДмени START */
+
+.podnav-bar {
+    width: 100%;
+    height: 80px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .04);
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+}
+
+.second-nav ul li {
+    display: inline;
+}
+
+.second-nav a {
+    font-size: 25px;
+    font-weight: 500;
+    color: #222222;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 0 20px;
+    position: relative;
+} 
+
+.second-nav a:before,
+.second-nav a:after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #F29F05;
+}
+
+.second-nav a:before {
+  opacity: 0;
+  -webkit-transform: translateY(-8px);
+  -ms-transform: translateY(-8px);
+  transform: translateY(-8px);
+  -webkit-transition: -webkit-transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s;
+  transition: transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s;
+}
+
+.second-nav a:after {
+  opacity: 0;
+  -webkit-transform: translateY(4px);
+  -ms-transform: translateY(4px);
+  transform: translateY(4px);
+  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s;
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s;
+}
+
+.second-nav a:hover:before,
+.second-nav a:hover:after,
+.second-nav a:focus:before,
+.second-nav a:focus:after {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.second-nav a:hover:before,
+.second-nav a:focus:before {
+  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s;
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s;
+}
+
+.second-nav a:hover:after,
+.second-nav a:focus:after {
+  -webkit-transition: -webkit-transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s 0.2s;
+  transition: transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s 0.2s;
+}
+
+/* ПОДмени END */
+
+/* SORT MENU START */
+
+.sort-menu-container-mein {
+    width: 100%;
+    height: 100px;
+    background-color: #f5f5f5;
+}
+
+.sort-menu-container {
+    width: 1340px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: stretch;
+    margin: 0 auto;
+}
+
+.sorting-inputs .sort {
+    width: 230px;
+    padding: 5px 10px;
+    border-top: 1px solid #F29F05;
+    border-bottom: 1px solid #F29F05;
+    border-right: none;
+    border-left: none;
+    /* border-radius: 4px; */
+    background-color: transparent;
+    outline: none;
+    font-size: 30px;
+    font-weight: 500;
+    color: #222222;
+}
+
+/* SORT MENU END */
+
+/* STORE GANDER INFO START */
+
+.gander-info-container {
+    width: auto;
+    height: auto;
+    padding: 50px 0 0 150px;
+    /* border-left: 5px solid #222222; */
+}
+
+.text-holder {
+    width: 221px;
+    height: 100px;
+    padding-left: 25px;
+    border-left: 5px solid #222222;
+}
+
+.text-holder h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #222222;
+}
+
+/* STORE GANDER INFO END */
+
+/* STORE PRODUCTS SECTION START */
+
+.store-product-container {
+    width: 1620px;
+    height: 1080px;
+    /* padding: 50px 0 0 150px; */;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: stretch;
+    align-content: stretch;
+    margin: 36px auto;
+}
+
+.product-box1 {
+    width: 395px;
+    height: 600px;
+    background-color: #E4E4E4;
+    /* padding: 30px 0 0 30px; */
+    margin-top: 14px;
+}
+
+.product-box1 .product-box-part1 {
+    padding: 30px 0 0 30px;
+  }
+  
+  .product-box1 .product-box-part1 h3 {
+    font-size: 35px;
+    font-weight: 700;
+    color: #222222;
+  }
+  
+  .product-box1 .product-box-part1 span {
+    font-size: 25px;
+    font-weight: 500;
+    color: #222222;
+  }
+  
+  .product-box1 .product-box-part3 button {
+    width: 40px;
+    height: 40px;
+    background-image: url(../picture/nav-icons/kosnica\ icon.svg);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: cover;
+    border: none;
+    outline: none;
+    cursor: pointer; 
+    margin-left: 30px;
+  }
+  
+  .product-box1 .product-box-part1 .new-product {
+    float: right;
+    margin: -20px 30px 0 0;
+    width: 66px;
+    height: 24px;
+    background-color: #F29F05;
+    text-align: center;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #f5f5f5;
+  }
+
+  .product-box1 .product-box-part1 .sold-product {
+    float: right;
+    margin: -20px 30px 0 0;
+    width: 108px;
+    height: 24px;
+    background-color: #222222;
+    text-align: center;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #f5f5f5;
+  }
+
+  .product-box1 .product-box-part1 .sale-product {
+    float: right;
+    margin: -20px 30px 0 0;
+    width: 66px;
+    height: 24px;
+    background-color: #D94444;
+    text-align: center;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #f5f5f5;
+  }
+  
+  .product-box1 .product-box-part2 {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+      align-content: stretch;
+      margin-top: 60px;
+  }
+  
+  .product-box1 .product-box-part2 .imgproduct{
+    width: 206px;
+    height: 276px;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: cover;
+    border: none;
+    outline: none;
+    cursor: pointer; 
+  }
+  
+  .product-box1 .product-box-part2 span {
+    font-size: 25px;
+    font-weight: 500;
+    color: #222222;
+    margin-top: 70px;
+  }
+
+  .product-img-box-man {
+      width: 1213px;
+      height: 600px;
+      background-image: url(../store_picture/store-man-pic.png);
+      margin-top: 14px;
+  }
+
+  .product-box1 .product-box-part2 .imgproduct-new {
+    width: 250px;
+    height: 276px;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: cover;
+    border: none;
+    outline: none;
+    cursor: pointer; 
+  }
+
+ /* STORE PRODUCTS SECTION END  */
