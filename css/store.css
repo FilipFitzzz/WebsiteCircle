@@ -305,6 +305,14 @@ margin: 0;
     color: #222222;
 }
 
+.sorting-inputs option {
+  font-size: 25px;
+  font-weight: 500;
+  color: #f5f5f5;
+  background-color: #222222;
+  outline: none;
+}
+
 /* SORT MENU END */
 
 /* STORE GANDER INFO START */
@@ -335,7 +343,7 @@ margin: 0;
 
 .store-product-container {
     width: 1620px;
-    height: 1080px;
+    height: auto;
     /* padding: 50px 0 0 150px; */;
 	display: flex;
 	flex-direction: row;
@@ -351,7 +359,8 @@ margin: 0;
     height: 600px;
     background-color: #E4E4E4;
     /* padding: 30px 0 0 30px; */
-    margin-top: 14px;
+    margin-top: 13px;
+    cursor: pointer;
 }
 
 .product-box1 .product-box-part1 {
@@ -468,4 +477,98 @@ margin: 0;
     cursor: pointer; 
   }
 
+  .product-models-image2 img {
+    width: 803px;
+    height: 600px;
+    margin-top: 13px;
+    cursor: pointer;
+  }
+
  /* STORE PRODUCTS SECTION END  */
+
+ .gander-info-container2 {
+  width: auto;
+  height: auto;
+  padding: 12px 0 0 150px;
+  /* border-left: 5px solid #222222; */
+}
+
+/* FOOTER START */
+
+.futter-container {
+  width: 100%;
+  height: 350px;
+  background-color: #222222;
+  margin-top: 50px;
+  padding: 50px 150px;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.footer-txt-elements {
+  width: 1148px;
+  height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: stretch;
+  padding-left: 80px;
+}
+
+.futter-container .about-text {
+  width: 390px;
+  height: 142px;
+  box-sizing: border-box;
+}
+
+.futter-container h1 {
+  font-size: 35px;
+  font-weight: 700;
+  color: #F29F05;
+}
+
+.futter-container .about-text p {
+  font-size: 18px;
+  font-weight: 300;
+  color: #F5F5F5;
+  margin-top: 10px;
+}
+
+.footer-site p {
+  font-size: 18px;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding-top: 15px;
+  color: #F5F5F5;
+  cursor: pointer;
+}
+
+.footer-info p {
+  font-size: 18px;
+  font-weight: 300;
+  color: #F5F5F5;
+  margin-top: 10px;
+}
+
+.footer-shop p {
+  font-size: 18px;
+  font-weight: 300;
+  color: #F5F5F5;
+  margin-top: 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.circle-social .footer-social-icons img {
+  cursor: pointer;
+  padding-left: 15px;
+  margin-top: 10px;
+}
+
+.circle-social .footer-social-icons img:first-of-type {
+padding: 0;
+}
+
+
+/* FOOTER END */
